@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>clip path</title>
+    <style>
+      body {
+        background-color: lightgray;
+        text-align: center;
+      }
+      body,
+      html {
+        height: 100%;
+      }
+      img {
+        height: 75%;
+      }
+      .clipPath {
+        /*type clip path in chorme */
+        clip-path: circle(33.8% at 50% 50%);
+      }
+    </style>
+  </head>
+  <body>
+    <img class="clipPath" src="photo.jpg" alt="" />
+  </body>
+</html>

@@ -1,0 +1,73 @@
+h1 {
+    width: 500px;
+    text-align: left;
+    color: royalblue;
+    text-transform: capitalize;
+}
+/*
+div {
+    padding-top: 5px;
+    width: 150px;
+    height: 100px;
+    border: 100px;
+    border-style: solid;
+    border-color: rgb(250, 249, 249);
+    border-width: 10px;
+    background-color: rgb(8, 8, 8);
+}
+#red {
+    list-style-type: circle;
+    list-style-position: inside;
+    background-color: red;
+    text-align: center;
+}
+#yellow {
+    list-style-type: circle;
+    list-style-position: inside;
+    background-color: yellow;
+    text-align: center;
+}
+#green{
+    list-style-type: circle;
+    list-style-position: inside;
+    background-color: green;
+    text-align: center;
+}
+.now{
+    clip-path: circle(50% at 50% 50%);
+    size: 40px;
+    background-color: red;
+    border-radius: 60%;
+    padding: 1px;
+}
+.tr{
+    clip-path: circle(50% at 50% 50%);
+    size: 40px;
+    background-color: yellow;
+    border-radius: 60%;
+    padding: 1px;
+}
+.r{
+    clip-path: circle(50% at 50% 50%);
+    size: 40px;
+    background-color:green;
+    border-radius: 60%;
+    padding: 1px;
+}
+pre{
+    width: 250px;
+    border: 10px solid black;
+}
+    */
+    
+body{
+    width: 200px;
+    border: 25px solid black;
+}
+div{
+    width: 100px;
+    height: 100px;
+    margin: 25px;
+    padding: 25px;
+    border-radius: 50%;
+}

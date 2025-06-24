@@ -1,0 +1,13 @@
+.box-set,.box{
+ border-radius: 6px;
+}
+.box-set{
+    background-color: white;
+}
+.box{
+    background: greenyellow;
+    height: 80px;
+    width: 80px;
+    text-align: center;
+    margin: 10px;
+}

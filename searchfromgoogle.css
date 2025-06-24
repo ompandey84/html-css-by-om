@@ -1,0 +1,28 @@
+h{
+    background-color: aqua;
+}
+#fire{
+    background-color: rgb(244, 152, 152);
+}
+.heading{
+    background-color: blue;
+}
+pre{
+       height: 650px;
+        width: 200px;
+        border: 25px solid black;
+        padding: 50px;
+
+    }
+.in{
+    width: 100px;
+    height: 100px;
+    margin: 25px;
+    padding: 25px;
+    border-radius: 50%;
+    transition: 1s;
+}
+.in:hover{
+    background-color: black;
+    
+}

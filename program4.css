@@ -1,0 +1,13 @@
+header{
+    background-color: purple;
+    text-align: center;
+    padding: 12px;
+    margin: auto;
+
+}
+nav{
+    position: sticky;
+    top: 20px;
+    background-color: black;
+    word-spacing: 10px;
+}

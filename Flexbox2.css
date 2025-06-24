@@ -1,0 +1,67 @@
+body{
+    text-align: center;
+}
+h1{
+    color: black;
+    text-align: center;
+    font-size: 50px;
+}
+.maindiv{
+    background-color: white;
+    border: solid black;
+    display: flex;
+    /* 
+    ** flex box direction
+    row :- means element arrenge in the way of left to right it is (default condition) ex:- flex-direction: row;
+    row reverse:- right to left ex:- flex-direction: row-reverse;
+    column:- vertically arrenge ex:- flex-direction: column; they can't change size of box they fit in this box.
+    column-reverse:- it change direction of box ex:-  flex-direction: column-reverse;
+    */
+    flex-direction: row;
+    /*
+    ** Justify-Content
+    center:- main axis arived in center ex:- justify-content: center;
+    start:- main axis ka start ex:-justify-content: flex-start;
+    end:- main axis ka end ex:- justify-content: flex-start;
+    space-around:- extra space cover by it ex:-  justify-content: space-around;
+    space-between:- extra space between to the box ex:-  justify-content: space-around;
+    space-evenly:- space saprated evenlly  ex:-justify-content: space-between;
+    */
+    justify-content: space-between;
+    
+}
+.flexbox1{
+    background-color: aqua;
+    width: 80px;
+    height: 80px;
+    margin: 10px;
+    padding: 1px soild black;
+}
+.flexbox2{
+    background-color: salmon;
+    width: 80px;
+    height: 80px;
+    margin: 10px;
+    padding: 1px soild black;
+}
+.flexbox3{
+    background-color: darkorchid;
+    width: 80px;
+    height: 80px;
+    margin: 10px;
+    padding: 1px soild black;
+}
+.flexbox4{
+    background-color: green;
+    width: 80px;
+    height: 80px;
+    margin: 10px;
+    padding: 1px soild black;
+}
+.flexbox5{
+    background-color: fuchsia;
+    width: 80px;
+    height: 80px;
+    margin: 10px;
+    padding: 1px soild black;
+}

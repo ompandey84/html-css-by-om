@@ -1,0 +1,42 @@
+h1{
+    position:relative;
+    top:40%;
+    left: 40%;
+    text-align: center;
+    width: 200px;
+    border: 1px solid black;
+    box-shadow: 0px 4px 8px black;
+}
+.outermost{
+    width: 400px;
+    height: 400px;
+    background-color: rgb(255, 187, 0) ;
+    border-radius: 50%;
+}
+.outerin{
+    width: 200px;
+    height: 75px;
+    background-color: brown;
+    border-bottom-right-radius: 50px;
+    border-bottom-left-radius: 50px;
+    position: absolute;
+    top: 320px;
+    left: 120px;
+}
+.in{
+    width: 50px;
+    height: 50px;
+    background-color: rgb(0, 0, 0);
+    border-radius: 50%;
+    position: absolute;
+    bottom: 180px;
+}
+.out{
+    width: 50px;
+    height: 50px;
+    background-color: rgb(0, 0, 0);
+    border-radius: 50%;
+    position: absolute;
+    bottom: 180px;
+    left: 138px;
+}

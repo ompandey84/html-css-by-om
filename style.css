@@ -1,0 +1,65 @@
+/* same attribute for same change */
+p,
+a{
+    color: fuchsia;
+}
+/* for Diffrent color of attribute
+p>a[href="../Html/IMG_8985.jpg"]{
+    color: gold;
+}*/
+/* element selector */
+li{
+
+   /* list-style: none; */
+   list-style-type: square;
+}
+/* class selector */
+.spi{
+    color: brown;
+    font-weight: bolder;
+}
+/* class selector for one tag*/
+span.spi{
+    color: blue;
+}
+/* Descendant Combinator */
+li em{
+    color: aqua;
+}
+/* Adjacent sibling Combinator */
+h2+p{
+    font-size: xx-large;
+    font-weight: 900;
+}
+/*pseudo class selector */
+a:hover{
+    color: black ;
+    text-decoration: none;
+}
+/* sare selector ko ak sath likhna hai  */
+body h2+p .spi{
+  color: midnightblue ;
+  background-color: black;
+  padding: 5px;
+}
+/* id selector */
+#ad{
+    color: rgb(0, 209, 14);
+}
+p#id{
+    color: burlywood;
+}
+/* atrribut selector*/
+li[class]{
+    font-size: xx-large
+}
+li[class="s"]{
+    font-size: larger;
+}
+li[class~="s"]{
+    color: turquoise;
+}
+/*universal selector*/
+*{
+  list-style-type: none;  
+}

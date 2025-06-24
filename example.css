@@ -1,0 +1,13 @@
+*{
+ font-family: 'Times New Roman';
+    background-color: rgb(50, 50, 50);
+}
+h1{
+    text-align: center;
+    text-transform: capitalize;
+    color: aqua;
+}
+p{
+    line-height: 90px;
+    text-transform: capitalize;
+}

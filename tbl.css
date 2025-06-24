@@ -1,0 +1,19 @@
+      table,
+      tr,
+      th,
+      td {
+        /* it used to make border */
+        border: 1px solid black;
+        /* it is use to join border */
+        border-collapse: collapse;
+        /* it use to provide space in table */
+        padding: 15px;
+        /* it use to provide space in border in table */
+        border-spacing:5px ;
+      }
+      th{
+        background-color: coral;
+      }
+      td{
+        background-color: turquoise;
+      }

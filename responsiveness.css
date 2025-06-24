@@ -1,0 +1,27 @@
+@media screen {
+        body{
+            color: grey;
+        }
+}
+@media screen and (max-width: 600px) {
+    p{
+        color: aqua;
+    }
+    
+}
+@media all and (min-width: 1001px){
+    #side ul li a:after{
+        /*that define the data-email and show it */
+        content: " (" attr(data-email)")";
+        font-size: 11px;
+        font-style: italic;
+        color: rgb(13, 12, 12);
+    }
+}
+.prea{
+    size: 10px;
+    font-size: large;
+    text-align: right;
+    text-emphasis: none;
+    text-align: top;
+}

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      html {
+        font-size: 1em;
+      }
+      /*
+         it work on 320px where the size was defined and also size match then it.
+         (@media screen) was main syntax then we define others using with (and) also in the bracket we define other thingd
+        */
+      /* 
+       @media screen and (width: 600px) it define the size where it work exact size was match
+     */
+      /* jab tak hum 600 width ke upar nahi pahuchjaynge tab tak ye chalega 
+     @media  screen and (max-width: 600px){
+        body {
+          color: green;
+        }
+      }
+    */
+      /* using media querie we change orientaion 
+       @media (orientation: landscape){
+            body{
+                color: aqua;
+            }
+       }
+    */
+      /*in this both condition is meat
+    @media screen and (max-width: 600px) and (orientation: landscape){
+      body{
+        color: blueviolet;
+      }
+    }
+       */
+      /* it check the both condition but apply only one
+       @media screen and (max-width: 600px),
+       screen and (orientation: landscape){
+        body{
+          color: aqua;
+        }        
+       }
+        */
+        /*not apply orientation*/
+        @media not all and(orientation: landscape){
+          body{
+            color: crimson;
+          }
+        }
+    </style>
+  </head>
+  <body>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis vitae odio
+      dolores veritatis commodi, tempora enim ab minus, ullam odit debitis quo,
+      quam vel aliquam aut! Reprehenderit similique ipsam tempore, blanditiis
+      culpa aspernatur maxime enim praesentium commodi iste in fugit, adipisci
+      recusandae labore quas esse perspiciatis dolorem ullam incidunt! Eligendi?
+    </p>
+  </body>
+</html>

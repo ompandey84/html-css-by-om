@@ -1,0 +1,250 @@
+<html>
+
+<head>
+    <title>Tripathi Hotel's Menu</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: sans-serif;
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #f0f0f0;
+            position: relative;
+        }
+
+        .background-image {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url('https://th.bing.com/th?id=OIP.aW8XKBgJxCz5KoGjAcE3bgHaEo&w=316&h=197&c=8&rs=1&qlt=90&o=6&dpr=1.3&pid=3.1&rm=2');
+            background-size: cover;
+            background-position: center;
+            z-index: 0;
+        }
+
+        .container {
+            text-align: center;
+            z-index: 1;
+            position: relative;
+        }
+
+        .logo {
+            max-width: 200px;
+            height: auto;
+            margin: 20px auto;
+            display: block;
+        }
+
+        .welcome-message {
+            text-align: center;
+            margin-bottom: 20px;
+            padding: 20px;
+            background-color: #e6f9ff;
+            border-radius: 5px;
+        }
+
+        .menu-section {
+            border: 1px solid #ccc;
+            padding: 20px;
+            margin: 10px;
+            border-radius: 5px;
+            background-color: #fff;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .menu-section h2 {
+            margin-top: 0;
+            color: #555;
+        }
+
+        .menu-item {
+            margin-bottom: 10px;
+        }
+
+        .menu-item img {
+            width: 100px;
+            height: 100px;
+            object-fit: cover;
+            float: left;
+            margin-right: 10px;
+        }
+
+        .menu-item p {
+            margin: 0;
+            color: #333;
+        }
+
+        button {
+            background-color: #4CAF50;
+            border: none;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="background-image"></div>
+
+    <div class="container">
+        <img class="logo" src="./EcommerseBackEnd/R.jpg" alt="Hotel Logo">
+        <div class="welcome-message">
+            <h1>Welcome to Tripathi Hotel</h1>
+            <p>We're delighted to serve you. Please browse our menu and place your order.</p>
+        </div>
+
+        <h1>Our Delicious Menu</h1>
+
+        <div class="menu-section">
+            <h2>Choose Your Preference</h2>
+            <button id="veg">Vegetarian</button>
+            
+                <button>Non-Vegetarian</button>
+        </div>
+
+        <div id="menu-container" style="display: none;">
+            <h2>Menu</h2>
+            <div id="veg-menu" class="menu-section">
+                <h2>Vegetarian Menu</h2>
+                <div class="menu-item">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/4/4e/Veg_Biryani.jpg" alt="Veg Dish 1">
+                    <p>Veg Biryani</p>
+                </div>
+                <div class="menu-item">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/5/5c/Paneer_Tikka_Masala.jpg"
+                        alt="Veg Dish 2">
+                    <p>Paneer Tikka Masala</p>
+                </div>
+                <div class="menu-item">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/0/0e/Dal_Makhani.jpg" alt="Veg Dish 3">
+                    <p>Dal Makhani</p>
+                </div>
+                <div class="menu-item">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/3/3e/Vegetable_Biryani.jpg"
+                        alt="Veg Dish 4">
+                    <p>Vegetable Biryani</p>
+                </div>
+                <div class="menu-item">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/4/4b/Aloo_Gobi.jpg" alt="Veg Dish 5">
+                    <p>Aloo Gobi</p>
+                </div>
+                <div class="menu-item">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/3/3f/Palak_Paneer.jpg" alt="Veg Dish 6">
+                    <p>Palak Paneer</p>
+                </div>
+                <div class="menu-item">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/1/1e/Baingan_Bharta.jpg" alt="Veg Dish 7">
+                    <p>Baingan Bharta</p>
+                </div>
+            </div>
+
+            <div id="non-veg-menu" class="menu-section" style="display: none;">
+                <h2>Non-Vegetarian Menu</h2>
+                <div class="menu-item">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/4/4e/Chicken_Biryani.jpg"
+                        alt="Non-Veg Dish 1">
+                    <p>Chicken Biryani</p>
+                </div>
+                <div class="menu-item">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/3/3e/Fish_Fry.jpg" alt="Non-Veg Dish 2">
+                    <p>Fish Fry</p>
+                </div>
+                <div class="menu-item">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/4/4f/Chicken_Tikka_Masala.jpg"
+                        alt="Non-Veg Dish 3">
+                    <p>Chicken Tikka Masala</p>
+                </div>
+                <div class="menu-item">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/5/5e/Butter_Chicken.jpg"
+                        alt="Non-Veg Dish 4">
+                    <p>Butter Chicken</p>
+                </div>
+                <div class="menu-item">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/3/3e/Mutton_Rogan_Josh.jpg"
+                        alt="Non-Veg Dish 5">
+                    <p>Mutton Rogan Josh</p>
+                </div>
+                <div class="menu-item">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/4/4e/Fish_and_Chips.jpg"
+                        alt="Non-Veg Dish 6">
+                    <p>Fish and Chips</p>
+                </div>
+                <div class="menu-item">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/5/5e/Chicken_Curry.jpg"
+                        alt="Non-Veg Dish 7">
+                    <p>Chicken Curry</p>
+                </div>
+            </div>
+
+            <div class="menu-section">
+                <h2>Choose Category</h2>
+                <button id="breakfast">Breakfast</button>
+                <button id="lunch">Lunch</button>
+                <button id="dinner">Dinner</button>
+            </div>
+        </div>
+
+        <script>
+
+            const vegButton = document.getElementById('veg');
+            const nonVegButton = document.getElementById('non-veg');
+            const vegMenu = document.getElementById('veg-menu');
+            const nonVegMenu = document.getElementById('non-veg-menu');
+            const menuContainer = document.getElementById('menu-container');
+
+            vegButton.addEventListener('click', () => {
+                vegMenu.style.display = 'block';
+                nonVegMenu.style.display = 'none';
+                menuContainer.style.display = 'block';
+            });
+
+            nonVegButton.addEventListener('click', () => {
+                vegMenu.style.display = 'none';
+                nonVegMenu.style.display = 'block';
+                menuContainer.style.display = 'block';
+            });
+
+            const breakfastButton = document.getElementById('breakfast');
+            breakfastButton.addEventListener('click', () => {
+                vegMenu.querySelectorAll('.menu-item').forEach(item => {
+                    item.style.display = 'block'; // Show all items initially
+                });
+                nonVegMenu.querySelectorAll('.menu-item').forEach(item => {
+                    item.style.display = 'block'; // Show all items initially
+                });
+            });
+
+            const lunchButton = document.getElementById('lunch');
+            lunchButton.addEventListener('click', () => {
+                // Implement logic to show/hide lunch items
+            });
+
+            const dinnerButton = document.getElementById('dinner');
+            dinnerButton.addEventListener('click', () => {
+                // Implement logic to show/hide dinner items
+            });
+
+        </script>
+
+    </div>
+
+</body>
+
+</html>

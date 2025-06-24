@@ -1,0 +1,63 @@
+header{
+    background-color: lightpink;
+}
+h1{
+    text-indent: 5%;
+    text-shadow: 2px 3px 2px black;
+}
+main{
+    background-color: #fff;
+}
+p {
+     font-weight: bolder; 
+}
+/*
+.firstn{
+    margin: 10px;
+    padding-top: inherit;
+}
+.firstm{
+    text-indent: 2%;
+    margin: 10px;
+    padding-top: inherit;
+}
+.firstl{
+    text-indent: 2%;
+    margin: 10px;
+    padding-top: inherit;
+}
+    */
+input[type="text"],
+input[type="number"],
+input[type="email"],
+input[type="radio"]{
+    text-indent: 1%;
+}
+.firstn,.firstm,.firstl,.gender,.cont,
+.email,.count,.add,.work{
+    text-indent: 1%;
+}
+.feed{
+  text-indent: 1%;
+}
+input[type="button"]{
+    font-weight: bolder;
+    background-color: #89daf3 ;
+    color:white;
+    padding: 11px 15px;
+    border: solid blue;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+}
+.button{
+    align-items: center;
+}
+footer{
+    background-color: lightgrey;
+    text-indent: 2%;
+    word-spacing: 5px;
+}
+.right{
+    text-align: right;
+}

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Overflow</title>
+    <style>
+      /* that is overflow of content */
+      .box {
+        border: 2px solid black;
+        width: 200px;
+        height: 75px;
+        /* overflow default property is visible and we also hide the overflow content ex:- */
+        /* 
+        overflow: hidden;
+        *//* ise hum content ko scroll kar ke dekh shakte hai
+        overflow: scroll;
+         */
+         overflow: auto;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Overflow in css</h1>
+    <div class="box">
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odio asperiores
+      id aut earum provident laboriosam at dolor. Repellat, quidem ut! lorem
+    </div>
+
+    <p>this content is outside of box</p>
+  </body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Inheritance</title>
+    <style>
+      /*
+       inherit work on parent child relationship body is parent and others are childrean if there we have not definr parents then it take Default values 
+      */
+      body {
+        color: royalblue;
+      }
+      .class-1 a {
+        color: inherit;
+      }
+      /* Initial depends on your browser*/
+      .class-2 a {
+        color: initial;
+      }
+      /* it's depend on the Inherit */
+      .class-3 a {
+        color: unset;
+      }
+    </style>
+  </head>
+  <body>
+    <ul>
+      <li class="class-1">Defauit <a href="">link</a>color</li>
+      <li class="class-2">Inheited <a href="">link</a>color</li>
+      <li class="class-3">initial <a href="">link</a>color</li>
+      <li class="class-4">Unset <a href="">link</a>color</li>
+    </ul>
+  </body>
+</html>

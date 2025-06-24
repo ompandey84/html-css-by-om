@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Our Hotel Menu</title>
+<style>
+body {
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f0f0f0; 
+}
+
+.container {
+  text-align: center;
+}
+
+.background-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; 
+}
+
+.logo {
+  position: relative; 
+  z-index: 1; 
+}
+
+.welcome-message {
+  text-align: center;
+  margin-bottom: 20px;
+  padding: 20px;
+  background-color: #e6f9ff; 
+  border-radius: 5px;
+}
+
+.menu-section {
+  border: 1px solid #ccc;
+  padding: 20px;
+  margin: 10px;
+  border-radius: 5px;
+  background-color: #fff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.menu-section h2 {
+  margin-top: 0;
+  color: #555;
+}
+
+.menu-item {
+  margin-bottom: 10px;
+}
+
+.menu-item img {
+  max-width: 100px;
+  float: left;
+  margin-right: 10px;
+}
+
+.menu-item p {
+  margin: 0;
+  color: #333;
+}
+
+button {
+  background-color: #4CAF50; 
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+</style>
+</head>
+<body>
+
+  <div class="background-image">
+    <img src="" alt="Background Image"> 
+  </div>
+
+  <div class="container">
+    <img class="logo" src="your_logo.png" alt="Hotel Logo"> 
+    <div class="welcome-message">
+      <h1>Welcome to [Your Hotel Name]!</h1>
+      <p>We're delighted to serve you. Please browse our menu and place your order.</p>
+    </div>
+
+    <h1>Our Delicious Menu</h1>
+
+    <div class="menu-section">
+      <h2>Choose Your Preference</h2>
+      <button id="veg">Vegetarian</button>
+      <button id="non-veg">Non-Vegetarian</button>
+    </div>
+
+    <div id="menu-container" style="display: none;">
+      <h2>Menu</h2>
+      <div id="veg-menu" class="menu-section">
+        <h2>Vegetarian Menu</h2>
+        <div class="menu-item">
+          <img src="images/veg_dish1.jpg" alt="Veg Dish 1">
+          <p>Veg Biryani</p>
+        </div>
+        <div class="menu-item">
+          <img src="images/veg_dish2.jpg" alt="Veg Dish 2">
+          <p>Paneer Tikka Masala</p>
+        </div>
+        <div class="menu-item">
+          <img src="images/veg_dish3.jpg" alt="Veg Dish 3">
+          <p>Dal Makhani</p>
+        </div>
+        <div class="menu-item">
+          <img src="images/veg_dish4.jpg" alt="Veg Dish 4">
+          <p>Vegetable Biryani</p>
+        </div>
+        <div class="menu-item">
+          <img src="images/veg_dish5.jpg" alt="Veg Dish 5">
+          <p>Aloo Gobi</p>
+        </div>
+        <div class="menu-item">
+          <img src="images/veg_dish6.jpg" alt="Veg Dish 6">
+          <p>Palak Paneer</p>
+        </div>
+        <div class="menu-item">
+          <img src="images/veg_dish7.jpg" alt="Veg Dish 7">
+          <p>Baingan Bharta</p>
+        </div>
+      </div>
+
+      <div id="non-veg-menu" class="menu-section" style="display: none;">
+        <h2>Non-Vegetarian Menu</h2>
+        <div class="menu-item">
+          <img src="images/non_veg_dish1.jpg" alt="Non-Veg Dish 1">
+          <p>Chicken Biryani</p>
+        </div>
+        <div class="menu-item">
+          <img src="images/non_veg_dish2.jpg" alt="Non-Veg Dish 2">
+          <p>Fish Fry</p>
+        </div>
+        <div class="menu-item">
+          <img src="images/non_veg_dish3.jpg" alt="Non-Veg Dish 3">
+          <p>Chicken Tikka Masala</p>
+        </div>
+        <div class="menu-item">
+          <img src="images/non_veg_dish4.jpg" alt="Non-Veg Dish 4">
+          <p>Butter Chicken</p>
+        </div>
+        <div class="menu-item">
+          <img src="images/non_veg_dish5.jpg" alt="Non-Veg Dish 5">
+          <p>Mutton Rogan Josh</p>
+        </div>
+        <div class="menu-item">
+          <img src="images/non_veg_dish6.jpg" alt="Non-Veg Dish 6">
+          <p>Fish and Chips</p>
+        </div>
+        <div class="menu-item">
+          <img src="images/non_veg_dish7.jpg" alt="Non-Veg Dish 7">
+          <p>Chicken Curry</p>
+        </div>
+      </div>
+
+      <div class="menu-section">
+        <h2>Choose Category</h2>
+        <button id="breakfast">Breakfast</button>
+        <button id="lunch">Lunch</button>
+        <button id="dinner">Dinner</button>
+      </div>
+    </div>
+
+    <script>
+      const vegButton = document.getElementById('veg');
+      const nonVegButton = document.getElementById('non-veg');
+      const vegMenu = document.getElementById('veg-menu');
+      const nonVegMenu = document.getElementById('non-veg-menu');
+      const menuContainer = document.getElementById('menu-container');
+
+      vegButton.addEventListener('click', () => {
+        vegMenu.style.display = 'block';
+        nonVegMenu.style.display = 'none';
+        menuContainer.style.display = 'block';
+      });
+
+      nonVegButton.addEventListener('click', () => {
+        vegMenu.style.display = 'none';
+        nonVegMenu.style.display = 'block';
+        menuContainer.style.display = 'block';
+      });
+
+      // Example for Breakfast category (you can add similar logic for lunch and dinner)
+      const breakfastButton = document.getElementById('breakfast');
+      breakfastButton.addEventListener('click', () => {
+        // Assuming you have breakfast menu items within each section (veg and non-veg)
+        // You would need to show/hide those specific items based on the selected category
+        // This is a simplified example
+        vegMenu.querySelectorAll('.menu-item').forEach(item => {
+          item.style.display = 'block'; // Show all items initially
+        });
+        nonVegMenu.querySelectorAll('.menu-item').forEach(item => {
+          item.style.display = 'block'; // Show all items initially
+        });
+      });
+
+      const lunchButton = document.getElementById('lunch');
+      lunchButton.addEventListener('click', () => {
+        // Implement logic to show/hide lunch items
+      });
+
+      const dinnerButton = document.getElementById('dinner');
+      dinnerButton.addEventListener('click', () => {
+        // Implement logic to show/hide dinner items
+      });
+
+    </script>
+
+  </div>
+
+</body>
+</html>

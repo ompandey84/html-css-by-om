@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Specificity</title>
+    <!--
+     Yaha par perform nahi hoga  
+      <link rel="stylesheet" href="../CSS/specificity.css" />
+      -->
+    <style>
+      /*
+      Note :-
+        > if we also use link styling css so there will we one rule that is
+        > niche wala perform hoga jo head ke andar sabse niche hoga
+      */
+
+      /* Specificity in this there will be only two parform font-size and font-weight becouse it's 
+          Specificity more  */
+      /* li.Appy{
+            color: sandybrown;
+            font-weight: bold;
+        }
+        ul#drink li{
+            font-size: 12px;
+            color: black;
+            font-weight: normal;
+        }*/
+      /* In this case niche wala perform hoga ther will be Specificity are same */
+      .Appy {
+        color: sandybrown;
+      }
+      .Appy {
+        color: green;
+      }
+    </style>
+    <link rel="stylesheet" href="../CSS/specificity.css" />
+  </head>
+  <body>
+    <h1>CSS Understanding</h1>
+    <hr />
+    <br />
+    <ul id="drinks">
+      <b>Summer Drink</b>
+      <!--there Specificity more than above (style) 
+      <li class="Appy" style="color: palevioletred">Appy Fizz</li> 
+      -->
+      <li class="Appy">Appy Fizz</li>
+      <li class="jee">jeeru</li>
+      <li class="Dew">Dew</li>
+    </ul>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius officiis
+      cum, ullam architecto veniam atque sequi praesentium inventore minima
+      numquam explicabo quam dolore aliquam? Beatae quia iusto sed neque harum
+      iure, itaque debitis a iste eveniet nemo voluptatibus! Quo sapiente unde
+      magni expedita, ab eaque laboriosam dolor doloremque illum nemo ipsa
+      magnam laborum corrupti neque aliquam distinctio praesentium tempore quae
+      quibusdam dolore eum ipsam aperiam nulla. Velit, adipisci. Quia
+      consequatur a iusto repellat aut dolore quos nam cum quaerat laboriosam
+      facere commodi illo quibusdam enim voluptates ut, in magni quae, aliquid,
+      ullam voluptatibus est eveniet! Cum voluptate assumenda, fugiat ullam
+      mollitia non ad asperiores accusamus ducimus. Sint voluptas quaerat
+      accusamus quod doloribus, tenetur eum ipsam officiis obcaecati recusandae
+      sed beatae libero eveniet earum! Velit quia itaque a vero dolore libero,
+      possimus natus quae, autem nihil non, dolor neque exercitationem et
+      praesentium rerum atque sapiente at ratione? Fuga veniam cupiditate
+      magnam.
+    </p>
+  </body>
+</html>

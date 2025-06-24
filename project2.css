@@ -1,0 +1,59 @@
+#heading {
+    background-color: grey;
+    text-align: center;
+    font-size: medium;
+    text-shadow: 5px;
+    font-weight: bold;
+    padding: 12px;
+    margin: auto;
+}
+
+.dev {
+    background-color: black;
+    color: cornflowerblue;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 500;
+    box-sizing: content-box;
+    width: 100%;
+    border: solid #060606 10px;
+    padding: 5px;
+}
+
+@media screen and(min-width=12px),
+screen and (max-width=1000px) {
+    .dev {
+        font-size: 11px;
+        font-style: italic;
+    }
+}
+
+@media screen and (width: 600px) {
+    #heading {
+        color: aqua;
+    }
+}
+
+.st {
+    box-sizing: content-box;
+    width: 100%;
+    border: solid #f3600b 10px;
+    padding: 5px;
+}
+
+@media screen and (min-device-aspect-ratio: 16/9) {
+    .st {
+        padding: 1rem 5vw;
+    }
+}
+@media screen and (device-aspect-ratio: 1/2) {
+    .st {
+        padding: auto;
+    }
+}
+.s{
+    background-color: gray;
+    color: black;
+    font-size: medium;
+    font-weight: bold;
+    text-align: center;
+}
